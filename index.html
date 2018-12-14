@@ -9,22 +9,20 @@
   <body>
     <header class="header">
       <img class="header__logo" src="./img/logoTesla.png" alt="Tesla logotype">
-      <nav class="header__menu">
-        <div class="header__menu-model">
-          <a class="menu" href="#">Model S</a>
-          <a class="menu" href="#">Model X</a>
-          <a class="menu" href="#">Model 3</a>
-          <a class="menu" href="#">Roadster</a>
-          <a class="menu" href="#">Energy</a>
-        </div>
-        <div class="header__menu-shop">
-          <a class="menu" href="#">Магазин</a>
-          <a class="menu" href="#">Войти</a>
-        </div>
-        <a class="header__burger-menu" href="#">
-          <img class="burger-menu" src="./img/menu.png" alt="">
-        </a>
+      <nav class="menu-model">
+        <a class="menu" href="#">Model S</a>
+        <a class="menu" href="#">Model X</a>
+        <a class="menu" href="#">Model 3</a>
+        <a class="menu" href="#">Roadster</a>
+        <a class="menu" href="#">Energy</a>
       </nav>
+      <div class="menu-shop">
+        <a class="menu" href="#">Магазин</a>
+        <a class="menu" href="#">Войти</a>
+      </div>
+      <a class="header__burger-menu" href="#">
+        <img class="burger-menu" src="./img/menu.png" alt="">
+      </a>
     </header>
 
     <main class="page">
@@ -39,7 +37,7 @@
           <img src="./img/modelS.png" alt="Model S" class="preview__img">
         </div>
 
-        <div class="preview__footer">
+        <div class="preview__description">
           <div class="acceleration">
             <img class="tach-icon" src="./img/tach-icon.png" alt="">
             <div class="specification">
@@ -59,7 +57,7 @@
               <p class="specification__title">запас хода</p>
             </div>
           </div>
-
+          
           <a class="test-drive" href="#">
             <img class="test-drive__img" src="./img/steering-wheel.png" alt="">
             <span class="test-drive__title">Тест драйв</span>
@@ -178,17 +176,17 @@
         <div class="car-frame">
           <img src="./img/car-frame.png" alt="Car frame">
         </div>
-        <div class="front-protection">
-          <img class="front-protection__img" src="./img/line-1.png" alt="">
-          <p class="front-protection__text">Защита от удара спереди</p>
+        <div class="protection">
+          <img class="protection__img" src="./img/line-1.png" alt="">
+          <p class="protection__text">Защита от удара спереди</p>
         </div>
-        <div class="side-protection">
-          <img class="side-protection__img" src="./img/line-2.png" alt="">
-          <p class="side-protection__text">Защита от удара сбоку</p>
+        <div class="protection">
+          <img class="protection__img" src="./img/line-2.png" alt="">
+          <p class="protection__text">Защита от удара сбоку</p>
         </div>
-        <div class="crash-protection">
-          <img class="crash-protection__img" src="./img/line-3.png" alt="">
-          <p class="crash-protection__text">Минимальный риск перевернуться в аварии</p>
+        <div class="protection">
+          <img class="protection__img" src="./img/line-3.png" alt="">
+          <p class="protection__text protection__text_down">Минимальный риск перевернуться в аварии</p>
         </div>
       </section>
 
