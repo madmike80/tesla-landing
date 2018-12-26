@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesla</title>
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/slyle.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
       <img class="header__logo" src="./img/logoTesla.png" alt="Tesla logotype">
       <nav class="menu-model">
-        <a class="menu-model__item" href="#">Model S</a>
+        <a class="menu-model__item menu-model__item_activ" href="#">Model S</a>
         <a class="menu-model__item" href="#">Model X</a>
         <a class="menu-model__item" href="#">Model 3</a>
         <a class="menu-model__item" href="#">Roadster</a>
@@ -30,30 +30,31 @@
     <main class="page">
       <section class="preview">
         <div class="preview__bg">
-          <h1 class="preview__title">
+          <p class="preview__title">
               Model S
-          </h1>
+        </p>
           <p class="preview__subtitle">
               Добро пожаловать в будущее!
           </p>
-          <img src="./img/modelS.png" alt="Model S" class="preview__img">
+          <img class="preview_img-bg" src="./img/bgTesla.png" alt="" >
+          <img class="preview__img" src="./img/modelS.jpg" alt="Model S" >
         </div>
 
         <div class="preview__description">
           <div class="acceleration">
             <img class="tach-icon" src="./img/tach-icon.png" alt="">
             <div class="specification">
-              <p class="specification__value">2,7 
+              <p class="specification__value">2,7
                 <span class="specification__unit">сек</span>
               </p>
-              <p class="">0-100 км/час</p>
+              <p class="specification__title">0-100 км/час</p>
             </div>
           </div>
 
           <div class="runaway">
             <img class="road-icon" src="./img/road-icon.png" alt="">
             <div class="specification">
-              <p class="specification__value">632 
+              <p class="specification__value">632
                 <span class="specification__unit">км</span>
               </p>
               <p class="specification__title">запас хода</p>
@@ -61,7 +62,7 @@
           </div>
           
           <a class="test-drive" href="#">
-            <img class="test-drive__img" src="./img/steering-wheel.png" alt="">
+            <!-- <img class="test-drive__img" src="./img/steering-wheel.png" alt=""> -->
             <span class="test-drive__title">Тест драйв</span>
           </a>
 
