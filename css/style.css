@@ -1,11 +1,48 @@
-*{
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body {
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header,
+.page {
   max-width: 1440px;
-  margin: auto;
+  margin: 0 auto;
   font-family: Montserrat;
 }
 
@@ -13,19 +50,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 50px 0 49px;
+  margin-top: 24px;
+}
+
+.header__logo {
+  margin-left: 49px;
 }
 
 .menu-model {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 90px;
 }
 
 .menu-model__item {
   text-decoration: none;
-  margin-left: 44px; 
+  margin-left: 44px;
   font-weight: 600;
   font-size: 15px;
   color: #000;
@@ -33,18 +73,18 @@ body {
 }
 
 .menu-model__item:first-child {
-  margin-left: 0px;
+  margin-left: 88px;
 }
 
- .menu-model__item:last-child {
+.menu-model__item:last-child {
   margin-left: 46px;
 }
 
-.menu-model__item_activ {
-  color: #E51937;
+.menu-model__item_active {
+  color: #e51937;
 }
 
-.menu-model__item_activ::after {
+.menu-model__item_active::after {
   content: "";
   background: url(../img/line-menu.png) bottom no-repeat;
   display: block;
@@ -58,6 +98,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 50px;
 }
 
 .side-menu__item {
@@ -73,98 +114,59 @@ body {
   padding-top: 4px;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  align-content: stretch;
-  margin: auto;
-}
-
 .preview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin-top: 58px;
+  text-align: center;
 }
 
 .preview__bg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
-  width: 100%;
+  background: url(../img/Teslalogo+car.png) center/100% auto no-repeat;
+  min-height: 595px;
+  margin-bottom: 25px;
 }
 
 .preview__title {
-  font-weight: 600;
   font-size: 90px;
-  height: 100px;
+  font-weight: 600;
 }
 
 .preview__subtitle {
-  font-weight: 500;
   font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  bottom: 10px;
 }
 
-.preview_img-bg {
-  position: absolute;
-  max-width:1440px;
-  max-height: 467px;
-  width: 100%;
-  height: 100%;
-  top: 135px;
-}
-
-.preview__img {
+.preview__info {
   display: flex;
-  justify-content: center;
-  margin-top: 27px;
-  max-width:968px;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 798px;
+  margin: auto;
+  margin-bottom: 35px;
 }
 
 .preview__description {
-  width: 800px;
-  margin-top: 25px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  max-width: 375px;
+  width: 100%;
 }
 
-.acceleration {
+.description {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 56px;
-}
-
-.tach-icon {
-  height: 34px;
-  width: 46px;
-}
-
-.runaway {
-  display: flex;
-  justify-content: end;
-  align-items: flex-end;
-}
-
-.road-icon {
-  height: 50px;
-  width: 31px;
 }
 
 .specification {
-  margin-left: 14px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .specification__value {
   font-weight: 600;
   font-size: 35px;
-  margin: 0;
+  margin-left: 14px;
 }
 
 .specification__unit {
@@ -174,60 +176,207 @@ body {
 
 .specification__title {
   font-size: 12px;
-  margin: 0;
 }
 
-.test-drive {
+.order {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 315px;
+  width: 100%;
+}
+
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
+  min-width: 118px;
 }
 
-.test-drive__title {
+.order__title {
   color: #000;
-  font-weight: bold;
   font-size: 13px;
+  font-weight: bold;
   text-transform: uppercase;
-  position: relative;
-  top: 3px;
-  left: 42px;
-  width: 89px;
-  height: 18px;
 }
 
-.test-drive__title:hover {
+.order__info_red:hover .order__title_red {
   color: #e51937;
 }
 
-.test-drive__title::after {
-  content: "";
-  background: url(../img/steering-wheel.png) no-repeat;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  position: relative;
-  right: 62px;
-  top: -19px;
+.order__info_red:hover svg {
+  fill: #e51937;
 }
 
-.test-drive__title:hover::after {
-  background: url(../img/steering-wheel_red.png) no-repeat;
-}
-
-.preview__btn {
+.order__btn {
   border: 2px solid #e51937;
-  background-color: #fff;
+  background: #fff;
   color: #e51937;
   cursor: pointer;
-  font-weight: bold;
   font-size: 13px;
-  padding: 0;
+  font-weight: bold;
   text-transform: uppercase;
-  height: 40px;
   width: 160px;
+  height: 40px;
 }
 
-.preview__btn:hover {
-  background-color: #e51937;
+.order__btn_red:hover {
+  background: #e51937;
   color: #fff;
+}
+
+.preview__arrow {
+  background: url(../img/vector.svg) no-repeat;
+  width: 34px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1401px) {
+  .header {
+    margin: auto;
+  }
+
+  .burger {
+    margin-right: 21px;
+  }
+
+  .preview__bg {
+    margin-bottom: 10px;
+  }
+
+  .preview__subtitle {
+    bottom: 9px;
+  }
+
+}
+
+@media screen and (max-width: 1201px) {
+
+  .preview {
+    margin-top: auto;
+  }
+
+  .preview__bg {
+    min-height: 468px;
+    margin-bottom: 10px;
+  }
+
+  .preview__title {
+    font-size: 70px;
+  }
+
+  .preview__subtitle {
+    bottom: 8px;
+  }
+
+}
+
+@media screen and (max-width: 1101px) {
+
+  .preview__subtitle {
+    bottom: 7px;
+  }
+
+  .preview__bg {
+    min-height: 450px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-model {
+    display: none;
+  }
+
+  .preview__bg {
+    min-height: 420px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .preview__info {
+    justify-content: space-around;
+    max-width: 798px;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-menu__item {
+    display: none;
+  }
+
+  .preview__info {
+    flex-direction: column;
+    margin: 0;
+    height: 130px;
+  }
+
+  .preview__bg {
+    min-height: 420px;
+  }
+
+  .preview__title {
+    font-size: 90px;
+  }
+
+  .preview__subtitle {
+    bottom: 5px;
+    font-size: 15px;
+  }
+
+  .preview__description {
+    margin-bottom: 30px;
+  }
+
+  .preview__arrow {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .preview__bg {
+    min-height: 250px;
+  }
+
+  .preview__title {
+    font-size: 50px;
+  }
+
+  .preview__subtitle {
+    bottom: 2px;
+    font-size: 10px;
+  }
+
+  .preview__description {
+    justify-content: space-around;
+  }
+
+  .specification__value {
+    font-size: 27px;
+  }
+
+  .specification__unit {
+    font-size: 15px;
+  }
+
+  .specification__title {
+    font-size: 10px;
+  }
+
+  .order {
+    justify-content: space-around;
+  }
 }
