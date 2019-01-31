@@ -1,37 +1,30 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
-
-
-
-
-
-
 
 * {
   margin: 0;
@@ -156,6 +149,7 @@
 .description {
   display: flex;
   align-items: center;
+  padding: 0 15px;
 }
 
 .specification {
@@ -183,6 +177,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 315px;
+  padding: 0 15px;
   width: 100%;
 }
 
@@ -233,15 +228,6 @@
   margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1401px) {
   .header {
     margin: auto;
@@ -258,11 +244,9 @@
   .preview__subtitle {
     bottom: 9px;
   }
-
 }
 
 @media screen and (max-width: 1201px) {
-
   .preview {
     margin-top: auto;
   }
@@ -279,10 +263,16 @@
   .preview__subtitle {
     bottom: 8px;
   }
-
 }
 
 @media screen and (max-width: 1101px) {
+  .header__logo {
+    margin-left: 15px;
+  }
+
+  .side-menu {
+    margin-right: 30px;
+  }
 
   .preview__subtitle {
     bottom: 7px;
@@ -347,6 +337,14 @@
 }
 
 @media screen and (max-width: 601px) {
+  .header__logo {
+    margin-left: 5px;
+  }
+
+  .side-menu {
+    margin-right: 20px;
+  }
+
   .preview__bg {
     min-height: 250px;
   }
