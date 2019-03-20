@@ -1,0 +1,490 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header,
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Montserrat;
+}
+
+/* Шапка сайта и меню */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.header__logo {
+  margin-left: 49px;
+}
+
+.menu-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-model__item {
+  text-decoration: none;
+  margin-left: 44px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.menu-model__item:first-child {
+  margin-left: 88px;
+}
+
+.menu-model__item:last-child {
+  margin-left: 46px;
+}
+
+.menu-model__item_active {
+  color: #e51937;
+}
+
+.menu-model__item_active::after {
+  content: "";
+  background: url(../img/line-menu.png) bottom no-repeat;
+  display: block;
+  width: 60px;
+  height: 2px;
+  position: relative;
+  top: 7px;
+}
+
+.side-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.side-menu__item {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000;
+  margin-left: 30px;
+}
+
+.menu-action {
+  margin-left: 30px;
+  padding-top: 4px;
+}
+
+/* 1 этаж */
+
+.preview {
+  margin-top: 58px;
+  text-align: center;
+}
+
+.preview__bg {
+  background: url(../img/Teslalogo+car.png) center/100% auto no-repeat;
+  min-height: 595px;
+  margin-bottom: 25px;
+}
+
+.preview__title {
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.preview__subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  bottom: 10px;
+}
+
+.preview__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 830px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.preview__description {
+  display: flex;
+  justify-content: space-between;
+  max-width: 410px;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.specification {
+  display: flex;
+  flex-direction: column;
+}
+
+.specification__value {
+  font-weight: 600;
+  font-size: 35px;
+  margin-left: 14px;
+}
+
+.specification__unit {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.specification__title {
+  font-size: 12px;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  min-width: 118px;
+}
+
+.order__title {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order__info_red:hover .order__title_red {
+  color: #e51937;
+}
+
+.order__info_red:hover svg {
+  fill: #e51937;
+}
+
+.order__btn {
+  border: 2px solid #e51937;
+  background: #fff;
+  color: #e51937;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+}
+
+.order__btn:hover {
+  background: #e51937;
+  color: #fff;
+}
+
+.preview__arrow {
+  background: url(../img/vector.svg) no-repeat;
+  width: 34px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+/* 2 этаж */
+
+.info {
+  background: url(../img/tesla-cockpit.png) 0% 100%/88.5% auto no-repeat;
+  display: flex;
+  justify-content: space-between;
+  height: 900px;
+}
+
+.info__title {
+  align-self: flex-start;
+  color: #e51937;
+  font-size: 70px;
+  font-weight: 600;
+  margin-top: 63px;
+  margin-left: 80px;
+}
+
+.content {
+  background-color: #e51937;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  max-width: 440px;
+  padding: 0 15px;
+}
+
+.content_right {
+  text-align: left;
+  letter-spacing: 0.1px;
+}
+
+.content__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 50px 0 10px 36px;
+}
+
+.content__text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 60px 65px 36px;
+  width: 316px;
+}
+
+.description-info {
+  margin: 0 0 30px 20px;
+  width: 275px;
+  height: 70px;
+}
+
+.description-info:nth-child(5) {
+  margin: 0 0 166px 22px;
+  width: 275px;
+  height: 70px;
+}
+
+.specification-screen__value {
+  padding: 0 0 20px 5px;
+}
+
+.specification-wifi {
+  padding-left: 20px;
+}
+
+.specification-bag {
+  padding: 0 0 8px 10px;
+}
+
+.order_aside {
+  margin-left: 18px;
+  max-width: 380px;
+}
+
+.order__info_white {
+  min-width: 155px;
+}
+
+.order__title_white {
+  color: #fff;
+}
+
+.order__btn_white {
+  border: solid 2px #fff;
+  background: #e51937;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.order__info_white:hover svg {
+  fill: #fff;
+}
+
+.order__info_white:hover path {
+  fill: #e51937;
+}
+
+.order__btn_white:hover {
+  background: #fff;
+  color: #e51937;
+}
+
+/* 3 этаж */
+
+@media screen and (max-width: 1401px) {
+  .header {
+    margin: auto;
+  }
+
+  .burger {
+    margin-right: 21px;
+  }
+
+  .preview__bg {
+    margin-bottom: 10px;
+  }
+
+  .preview__subtitle {
+    bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .preview {
+    margin-top: auto;
+  }
+
+  .preview__bg {
+    min-height: 468px;
+    margin-bottom: 10px;
+  }
+
+  .preview__title {
+    font-size: 70px;
+  }
+
+  .preview__subtitle {
+    bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .header__logo {
+    margin-left: 15px;
+  }
+
+  .side-menu {
+    margin-right: 30px;
+  }
+
+  .preview__subtitle {
+    bottom: 7px;
+  }
+
+  .preview__bg {
+    min-height: 450px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-model {
+    display: none;
+  }
+
+  .preview__bg {
+    min-height: 420px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .preview__info {
+    justify-content: space-around;
+    max-width: 798px;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .side-menu__item {
+    display: none;
+  }
+
+  .preview__info {
+    flex-direction: column;
+    margin: 0;
+    height: 130px;
+  }
+
+  .preview__bg {
+    min-height: 420px;
+  }
+
+  .preview__title {
+    font-size: 90px;
+  }
+
+  .preview__subtitle {
+    bottom: 5px;
+    font-size: 15px;
+  }
+
+  .preview__description {
+    margin-bottom: 30px;
+  }
+
+  .preview__arrow {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .header__logo {
+    margin-left: 5px;
+  }
+
+  .side-menu {
+    margin-right: 20px;
+  }
+
+  .preview__bg {
+    min-height: 250px;
+  }
+
+  .preview__title {
+    font-size: 50px;
+  }
+
+  .preview__subtitle {
+    bottom: 2px;
+    font-size: 10px;
+  }
+
+  .preview__description {
+    justify-content: space-around;
+  }
+
+  .specification__value {
+    font-size: 27px;
+  }
+
+  .specification__unit {
+    font-size: 15px;
+  }
+
+  .specification__title {
+    font-size: 10px;
+  }
+
+  .order {
+    justify-content: space-around;
+  }
+}
