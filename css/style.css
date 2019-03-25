@@ -303,7 +303,7 @@
   padding: 0 0 8px 10px;
 }
 
-.order_aside {
+.order_aside-right {
   margin-left: 18px;
   max-width: 380px;
 }
@@ -337,6 +337,93 @@
 }
 
 /* 3 этаж */
+
+.security {
+  background: url(../img/car_frame_group.png) 88.5% 55%/73% auto no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  height: 900px;
+  z-index: 1;
+}
+
+.security__title {
+  font-size: 200px;
+  font-weight: 600;
+  color: #e51937;
+  margin-top: 95px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.content_left {
+  z-index: -1;
+}
+
+.security-rating {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 85px 42px;
+}
+
+.security-rating__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 29px;
+  padding: 0 15px;
+}
+
+.security-rating__category {
+  display: flex;
+  justify-content: space-between;
+  max-width: 290px;
+  text-transform: uppercase;
+}
+
+.security-rating__text {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.security-rating__text-sub {
+  font-size: 10px;
+}
+
+.rating {
+  margin: 0 0 52px 52px;
+  display: flex;
+}
+
+.rating__text {
+  margin-left: 10px;
+  padding: 0 15px;
+}
+
+.rating__value {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.rating__title {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  bottom: 10px;
+}
+
+.order_aside-left {
+  margin-left: 5px;
+  max-width: 380px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 18px;
+  position: relative;
+  bottom: 52px;
+}
 
 @media screen and (max-width: 1401px) {
   .header {
