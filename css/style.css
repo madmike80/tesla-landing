@@ -49,7 +49,7 @@
 }
 
 .header__logo {
-  margin-left: 49px;
+  margin-left: 43px;
 }
 
 .menu-model {
@@ -68,7 +68,7 @@
 }
 
 .menu-model__item:first-child {
-  margin-left: 88px;
+  margin-left: 67px;
 }
 
 .menu-model__item:last-child {
@@ -93,7 +93,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 61px;
 }
 
 .side-menu__item {
@@ -117,10 +117,13 @@
 }
 
 .preview__bg {
-  background: url(../img/Tesla-Wordmark-Red.svg) center 0%/100% auto no-repeat,
-    url(../img/tesla-bg.png) center 100%/67% auto no-repeat;
-  min-height: 595px;
-  margin-bottom: 25px;
+  background: url(../img/Tesla-Wordmark-Red.svg) center 0%/100% auto no-repeat;
+  /* min-height: 595px; */
+  margin-bottom: 21px;
+}
+
+.preview__foto {
+  margin-top: 17px;
 }
 
 .preview__title {
@@ -181,7 +184,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 350px;
+  max-width: 360px;
   padding: 0 15px;
   width: 100%;
 }
@@ -189,7 +192,7 @@
 .order__info {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   padding-left: 10px;
   text-decoration: none;
   min-width: 118px;
@@ -199,6 +202,7 @@
   color: #000;
   font-size: 13px;
   font-weight: bold;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 
@@ -238,10 +242,14 @@
 /* 2 этаж */
 
 .info {
-  background: url(../img/tesla-cockpit.png) 0% 100%/88.5% auto no-repeat;
   display: flex;
   justify-content: space-between;
-  height: 900px;
+}
+
+.info__bg {
+  background: url(../img/tesla-cockpit.png) 0% 100%/127% auto no-repeat;
+  flex-basis: 70%;
+  min-height: 900px;
 }
 
 .info__title {
@@ -355,15 +363,6 @@
   z-index: 1;
 }
 
-/* .security__title {
-  font-size: 200px;
-  font-weight: 600;
-  color: #e51937;
-  margin-top: 95px;
-  opacity: 0.1;
-  z-index: -1;
-} */
-
 .content_left {
   z-index: -1;
 }
@@ -449,6 +448,8 @@
   .preview__subtitle {
     bottom: 9px;
   }
+
+
 }
 
 @media screen and (max-width: 1201px) {
@@ -461,11 +462,12 @@
   }
 
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
-        no-repeat,
-      url(../img/tesla-bg.png) center 100%/91% auto no-repeat;
-    min-height: 745px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto no-repeat;
     margin-bottom: 20px;
+  }
+
+  .preview__foto {
+    margin-top: 85px;
   }
 
   .preview__subtitle {
@@ -473,9 +475,12 @@
   }
 
   .info {
-    background: url(../img/tesla-cockpit.png) center 5%/100% auto no-repeat;
     flex-direction: column;
-    height: 1230px;
+  }
+
+  .info__bg {
+    background: url(../img/tesla-cockpit.png) 50% 0%/cover no-repeat;
+    max-height: 900px;
   }
 
   .info__title {
@@ -499,7 +504,7 @@
 
   .description-wrap {
     flex-basis: 45%;
-    margin: 50px 0 0 50px;
+    margin: 50px 0 0 45px;
   }
 
   .security {
@@ -509,8 +514,10 @@
     height: 1230px;
   }
 
+
   .security-rating {
-    margin: 50px 0 85px 42px;
+    flex-basis: 42%;
+    margin: 50px 0 85px 0px;
   }
 
   .order_aside-right,
@@ -539,16 +546,12 @@
   }
 
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
-        no-repeat,
-      url(../img/tesla-bg.png) center 110%/91% auto no-repeat;
-    min-height: 640px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto no-repeat;
     margin-bottom: 20px;
   }
 
-  .info,
   .security {
-    height: 1210px;
+    height: 1130px;
   }
 }
 
@@ -558,15 +561,16 @@
   }
 
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
-        no-repeat,
-      url(../img/tesla-bg.png) center 120%/91% auto no-repeat;
-    min-height: 580px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto no-repeat;
   }
 
-  .info,
+  .preview__foto {
+    width: calc(100% - 40px);
+    margin-top: 70px;
+  }
+
   .security {
-    height: 1145px;
+    height: 1100px;
   }
 
   .info__title {
@@ -583,11 +587,19 @@
 
   .description-wrap {
     flex-basis: 40%;
+    margin: 50px 0 0 25px;
   }
 
   .order_aside-right,
   .order_aside-left {
     margin: 0 0 50px 280px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+
+  .security {
+    height: 1090px;
   }
 }
 
@@ -597,6 +609,10 @@
     max-width: 798px;
     margin: auto;
     margin-bottom: 35px;
+  }
+
+  .preview__foto {
+    margin-top: 35px;
   }
 }
 
@@ -633,11 +649,13 @@
   }
 
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 40%/109% auto
-        no-repeat,
-      url(../img/tesla-bg.png) center 111%/91% auto no-repeat;
-    min-height: 510px;
-    margin-bottom: 90px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 36%/109% auto no-repeat;
+    margin-bottom: 64px;
+  }
+
+  .preview__foto {
+    width: calc(100% - 62px);
+    margin-top: 74px;
   }
 
   .preview__subtitle {
@@ -707,7 +725,6 @@
     font-size: 16px;
   }
 
-  .info,
   .security {
     height: 1015px;
   }
@@ -745,9 +762,7 @@
   }
 
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 26%/98% auto no-repeat,
-      url(../img/tesla-bg.png) center 129%/84% auto no-repeat;
-    min-height: 380px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 26%/98% auto no-repeat;
   }
 
   .preview__title {
@@ -781,21 +796,16 @@
     justify-content: space-around;
   }
 
-  .info {
-    flex-direction: column-reverse;
-    height: 760px;
-  }
-
-  .security {
-    height: 760px;
-  }
-
   .content {
     flex-direction: column;
   }
 
   .content__text {
     width: 100%;
+  }
+
+  .security {
+    height: 750px;
   }
 
   .info__title,
@@ -809,9 +819,7 @@
 
 @media screen and (max-width: 375px) {
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 57%/98% auto no-repeat,
-      url(../img/tesla-bg.png) center 111%/84% auto no-repeat;
-    min-height: 260px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 57%/98% auto no-repeat;
   }
 
   .order__title {
@@ -834,7 +842,6 @@
     height: 35px;
   }
 
-  .info,
   .security {
     height: 630px;
   }
