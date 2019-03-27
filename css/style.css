@@ -117,7 +117,8 @@
 }
 
 .preview__bg {
-  background: url(../img/Teslalogo+car.png) center/100% auto no-repeat;
+  background: url(../img/Tesla-Wordmark-Red.svg) center 0%/100% auto no-repeat,
+    url(../img/tesla-bg.png) center 100%/67% auto no-repeat;
   min-height: 595px;
   margin-bottom: 25px;
 }
@@ -188,7 +189,8 @@
 .order__info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  padding-left: 10px;
   text-decoration: none;
   min-width: 118px;
 }
@@ -303,6 +305,10 @@
   padding: 0 0 8px 10px;
 }
 
+.description-wrap {
+  margin-bottom: 138px;
+}
+
 .order_aside-right {
   margin-left: 18px;
   max-width: 380px;
@@ -339,22 +345,24 @@
 /* 3 этаж */
 
 .security {
-  background: url(../img/car_frame_group.png) 88.5% 55%/73% auto no-repeat;
+  background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat,
+    url(../img/car_frame_group.png) 88.5% 55%/73% auto no-repeat;
+  background-blend-mode: hue;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: row;
   height: 900px;
   z-index: 1;
 }
 
-.security__title {
+/* .security__title {
   font-size: 200px;
   font-weight: 600;
   color: #e51937;
   margin-top: 95px;
   opacity: 0.1;
   z-index: -1;
-}
+} */
 
 .content_left {
   z-index: -1;
@@ -444,21 +452,76 @@ footer {
 }
 
 @media screen and (max-width: 1201px) {
+  .header {
+    margin-bottom: 82px;
+  }
+
   .preview {
     margin-top: auto;
   }
 
   .preview__bg {
-    min-height: 468px;
-    margin-bottom: 10px;
-  }
-
-  .preview__title {
-    font-size: 70px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
+        no-repeat,
+      url(../img/tesla-bg.png) center 100%/91% auto no-repeat;
+    min-height: 745px;
+    margin-bottom: 20px;
   }
 
   .preview__subtitle {
-    bottom: 8px;
+    bottom: 11px;
+  }
+
+  .info {
+    background: url(../img/tesla-cockpit.png) center 5%/100% auto no-repeat;
+    flex-direction: column;
+    height: 1230px;
+  }
+
+  .info__title {
+    align-self: flex-end;
+    margin-right: 80px;
+  }
+
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+
+  .content__title {
+    margin: 60px 50px 10px 36px;
+  }
+
+  .text-wrap {
+    flex-basis: 50%;
+  }
+
+  .description-wrap {
+    flex-basis: 45%;
+    margin: 50px 0 0 50px;
+  }
+
+  .security {
+    background: url(../img/ModelS.svg) 50% 7%/80% auto no-repeat,
+      url(../img/car_frame_group.png) 50% 16%/95% auto no-repeat;
+    flex-direction: column-reverse;
+    height: 1230px;
+  }
+
+  .security-rating {
+    margin: 50px 0 85px 42px;
+  }
+
+  .order_aside-right,
+  .order_aside-left {
+    margin: 0 0 50px 365px;
+    max-width: 440px;
+  }
+
+  .rating,
+  .footer {
+    display: none;
   }
 }
 
@@ -476,18 +539,55 @@ footer {
   }
 
   .preview__bg {
-    min-height: 450px;
-    margin: 0px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
+        no-repeat,
+      url(../img/tesla-bg.png) center 110%/91% auto no-repeat;
+    min-height: 640px;
+    margin-bottom: 20px;
+  }
+
+  .info,
+  .security {
+    height: 1210px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1030px) {
   .menu-model {
     display: none;
   }
 
   .preview__bg {
-    min-height: 420px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 20%/109% auto
+        no-repeat,
+      url(../img/tesla-bg.png) center 120%/91% auto no-repeat;
+    min-height: 580px;
+  }
+
+  .info,
+  .security {
+    height: 1145px;
+  }
+
+  .info__title {
+    margin-top: 20px;
+  }
+
+  .content__title {
+    margin: 60px 0px 10px 15px;
+  }
+
+  .content__text {
+    margin: 0 60px 65px 15px;
+  }
+
+  .description-wrap {
+    flex-basis: 40%;
+  }
+
+  .order_aside-right,
+  .order_aside-left {
+    margin: 0 0 50px 280px;
   }
 }
 
@@ -501,8 +601,29 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 82px;
+  }
+
+  .header__logo {
+    margin-top: 24px;
+  }
+
+  .side-menu {
+    margin-right: 12px;
+  }
+
   .side-menu__item {
     display: none;
+  }
+
+  .menu-action {
+    margin-top: 24px;
+  }
+
+  .burger {
+    width: 35px;
+    height: 22px;
   }
 
   .preview__info {
@@ -512,28 +633,109 @@ footer {
   }
 
   .preview__bg {
-    min-height: 420px;
-  }
-
-  .preview__title {
-    font-size: 90px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 40%/109% auto
+        no-repeat,
+      url(../img/tesla-bg.png) center 111%/91% auto no-repeat;
+    min-height: 510px;
+    margin-bottom: 90px;
   }
 
   .preview__subtitle {
-    bottom: 5px;
-    font-size: 15px;
+    bottom: 11px;
   }
 
   .preview__description {
-    margin-bottom: 30px;
+    max-width: 520px;
+    margin-bottom: 58px;
+  }
+
+  .description {
+    max-width: 240px;
+    height: 80px;
+  }
+
+  .description:nth-child(1) svg {
+    width: 66px;
+    height: 49px;
+  }
+
+  .description:nth-child(2) {
+    margin-right: 16px;
+  }
+
+  .description:nth-child(2) svg {
+    width: 38px;
+    height: 61px;
+  }
+
+  .specification__value {
+    font-size: 50px;
+    margin-left: 20px;
+  }
+
+  .specification__title {
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  .description-wrap {
+    margin: 50px 0 0 0;
+  }
+
+  .specification__screen-value,
+  .specification__bag-value {
+    font-size: 35px;
+  }
+
+  .order {
+    max-width: 450px;
+  }
+
+  .order__info svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+  }
+
+  .order__title {
+    font-size: 16px;
+  }
+
+  .order__btn {
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .info,
+  .security {
+    height: 1015px;
+  }
+
+  .description-info {
+    max-width: 280px;
+  }
+
+  .specification__title {
+    padding: 0;
+  }
+
+  .order_aside-right,
+  .order_aside-left {
+    margin: 0 0 50px 125px;
+    min-width: 530px;
+  }
+
+  .order__info_white {
+    min-width: 202px;
   }
 
   .preview__arrow {
-    margin-top: 40px;
+    margin-top: 92px;
   }
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 732px) {
   .header__logo {
     margin-left: 5px;
   }
@@ -543,7 +745,9 @@ footer {
   }
 
   .preview__bg {
-    min-height: 250px;
+    background: url(../img/Tesla-Wordmark-Red.svg) center 26%/98% auto no-repeat,
+      url(../img/tesla-bg.png) center 129%/84% auto no-repeat;
+    min-height: 380px;
   }
 
   .preview__title {
@@ -569,9 +773,69 @@ footer {
 
   .specification__title {
     font-size: 10px;
+    padding-right: 0px;
+    padding-left: 20px;
   }
 
   .order {
     justify-content: space-around;
+  }
+
+  .info {
+    flex-direction: column-reverse;
+    height: 760px;
+  }
+
+  .security {
+    height: 760px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content__text {
+    width: 100%;
+  }
+
+  .info__title,
+  .order_aside-right,
+  .order_aside-left,
+  .security-rating,
+  .description-wrap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .preview__bg {
+    background: url(../img/Tesla-Wordmark-Red.svg) center 57%/98% auto no-repeat,
+      url(../img/tesla-bg.png) center 111%/84% auto no-repeat;
+    min-height: 260px;
+  }
+
+  .order__title {
+    font-size: 13px;
+  }
+
+  .order__btn {
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .description:nth-child(1) svg {
+    width: 38px;
+    height: 28px;
+  }
+
+  .description:nth-child(2) svg {
+    width: 22px;
+    height: 35px;
+  }
+
+  .info,
+  .security {
+    height: 630px;
   }
 }
