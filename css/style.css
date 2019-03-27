@@ -425,12 +425,12 @@
   max-width: 380px;
 }
 
-footer {
+.footer-logo {
   display: flex;
   justify-content: flex-end;
-  margin-right: 18px;
-  position: relative;
-  bottom: 52px;
+  align-self: flex-end;
+  margin-right: 17px;
+  margin-bottom: 12px;
 }
 
 @media screen and (max-width: 1401px) {
@@ -520,7 +520,7 @@ footer {
   }
 
   .rating,
-  .footer {
+  .footer-logo {
     display: none;
   }
 }
