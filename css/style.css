@@ -237,6 +237,7 @@
   height: 20px;
   margin: auto;
   margin-bottom: 35px;
+
 }
 
 /* 2 этаж */
@@ -451,6 +452,7 @@
 }
 
 @media screen and (max-width: 1201px) {
+
   .header {
     margin-bottom: 82px;
   }
@@ -555,6 +557,7 @@
 }
 
 @media screen and (max-width: 1030px) {
+
   .menu-model {
     display: none;
   }
@@ -599,6 +602,7 @@
 @media screen and (max-width: 964px) {
   .security {
     height: 1090px;
+
   }
 }
 
@@ -762,6 +766,7 @@
 }
 
 @media screen and (max-width: 732px) {
+
   .header__logo {
     margin-left: 5px;
   }
