@@ -359,7 +359,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  height: 900px;
+  min-height: 900px;
   z-index: 1;
 }
 
@@ -478,7 +478,7 @@
   }
 
   .info__bg {
-    background: url(../img/tesla-cockpit.png) 0% 100%/127% auto no-repeat;
+    background: url(../img/tesla-cockpit.png) 0% 100%/100% auto no-repeat;
     min-height: 1000px;
   }
 
@@ -511,7 +511,7 @@
     background: url(../img/ModelS.svg) 50% 7%/80% auto no-repeat,
       url(../img/car_frame_group.png) 50% 16%/95% auto no-repeat;
     flex-direction: column-reverse;
-    height: 1230px;
+    min-height: 1230px;
   }
 
   .security-rating {
@@ -551,7 +551,7 @@
   }
 
   .security {
-    height: 1130px;
+    min-height: 1130px;
   }
 }
 
@@ -571,7 +571,7 @@
   }
 
   .security {
-    height: 1100px;
+    min-height: 1100px;
   }
 
   .info__title {
@@ -603,7 +603,7 @@
 
 @media screen and (max-width: 964px) {
   .security {
-    height: 1090px;
+    min-height: 1090px;
   }
 
   .info__bg {
@@ -711,7 +711,7 @@
   }
 
   .description-wrap {
-    margin: 50px 0 0 0;
+    margin: 54px 0 0 0;
     width: 290px;
   }
 
@@ -740,12 +740,18 @@
     font-size: 16px;
   }
 
-  .security {
-    height: 1015px;
+  .info__bg {
+    min-height: 527px;
   }
 
-  .info__bg {
-    min-height: 620px;
+  .info__title {
+    margin-top: 35px;
+    margin-right: 47px;
+  }
+
+  .security {
+    background: url(../img/ModelS.svg) 54% 8%/77% auto no-repeat, url(../img/car_frame_group.png) -32% 13%/96% auto no-repeat;
+    min-height: 1037px;
   }
 
   .text-wrap {
@@ -757,6 +763,7 @@
   }
 
   .description-info {
+    margin: 0 0 10px 32px;
     max-width: 280px;
   }
 
@@ -766,8 +773,8 @@
 
   .order_aside-right,
   .order_aside-left {
-    margin: 0 0 50px 125px;
-    min-width: 530px;
+    margin: 10px 0 54px 115px;
+    min-width: 498px;
   }
 
   .order__info_white {
@@ -832,11 +839,13 @@
   }
 
   .content__text {
+    margin-left: 5px;
+    padding: 0 10px;
     width: 100%;
   }
 
   .security {
-    height: 750px;
+    min-height: 750px;
   }
 
   .info__title,
@@ -882,16 +891,76 @@
 }
 
 @media screen and (max-width: 375px) {
+
+  .header {
+    margin-bottom: 35px;
+  }
+
+  .header__logo {
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 138px;
+    height: 32px;
+  }
+
+  .menu-action {
+    margin-top: 15px;
+  }
+
+  .burger {
+    width: 24px;
+    height: 15px;
+    margin-right: 0;
+  }
+
   .preview__bg {
-    background: url(../img/Tesla-Wordmark-Red.svg) center 57%/98% auto no-repeat;
+    background: url(../img/Tesla-Wordmark-Red.svg) center/115% auto no-repeat;
+    margin-bottom: 13px;
+  }
+
+  .preview__foto {
+    width: calc(100% - 17px);
+    margin-top: 46px;
+}
+
+.preview__description {
+  margin-bottom: 26px;
+  }
+
+  .order__info {
+    padding-left: 5px;
+  }
+
+  .order__info svg {
+    width: 21px;
+    height: 21px;
+    margin-right: 0;
+}
+
+  .order__title {
+    padding: 0 5px;
+  }
+
+  .preview__arrow {
+    margin-top: 38px;
   }
 
   .info__bg {
-    min-height: 280px;
+    background: url(../img/tesla-cockpit.png) 32% 70%/140% auto no-repeat;
+    min-height: 286px;
+  }
+
+  .content__title {
+    margin: 20px 0px 10px 10px;
+  }
+
+  .content__text {
+    margin: 0 60px 40px 15px;
   }
 
   .security {
-    height: 630px;
+    background: url(../img/ModelS.svg) 0% 10%/107% auto no-repeat, url(../img/car_frame_group.png) 0% 16%/96% auto no-repeat;
+    min-height: 563px;
   }
 }
 
@@ -908,5 +977,9 @@
     width: 100px;
     height: 30px;
     font-size: 12px;
+  }
+
+  .security {
+    min-height: 730px;
   }
 }
