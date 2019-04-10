@@ -234,9 +234,9 @@
 .preview__arrow {
   background: url(../img/vector.svg) no-repeat;
   width: 34px;
-  height: 20px;
+  height: 54px;
   margin: auto;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
 }
 
 /* 2 этаж */
@@ -821,7 +821,9 @@
   }
 
   .preview__arrow {
-    margin-top: 92px;
+    background: url(../img/vector.svg) 50% 100% no-repeat;
+    min-height: 112px;
+    /* margin-top: 92px; */
   }
 }
 
