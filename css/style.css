@@ -747,6 +747,7 @@
 
   .text-wrap {
     flex-basis: 45%;
+    min-width: 374px;
   }
 
   .security-rating {
@@ -839,6 +840,10 @@
 
   .security {
     min-height: 750px;
+  }
+
+  .text-wrap {
+    width: 100%;
   }
 
   .info__title,
