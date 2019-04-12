@@ -481,63 +481,6 @@
   .security {
     background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat, url(../img/car_frame_group.png) 100% 40%/67% auto no-repeat;
   }
-
-  /* .info {
-    flex-direction: column;
-  }
-
-  .info__bg {
-    background: url(../img/tesla-cockpit.png) 0% 100%/100% auto no-repeat;
-    min-height: 1000px;
-  }
-
-  .info__title {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 80px;
-  }
-
-  .content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1200px;
-  }
-
-  .content__title {
-    margin: 60px 50px 10px 36px;
-  }
-
-  .text-wrap {
-    flex-basis: 50%;
-  }
-
-  .description-wrap {
-    flex-basis: 45%;
-    margin: 50px 0 0 45px;
-  }
-
-  .security {
-    background: url(../img/ModelS.svg) 50% 7%/80% auto no-repeat,
-      url(../img/car_frame_group.png) 50% 16%/95% auto no-repeat;
-    flex-direction: column-reverse;
-    min-height: 1230px;
-  }
-
-  .security-rating {
-    flex-basis: 42%;
-    margin: 50px 0 85px 0px;
-  }
-
-  .order_aside-right,
-  .order_aside-left {
-    margin: 0 0 50px 365px;
-    max-width: 440px;
-  }
-
-  .rating,
-  .footer-logo {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 1101px) {
@@ -799,7 +742,7 @@
   }
 
   .security-rating__category {
-    min-width: 325px;
+    min-width: 320px;
 }
 
   .text-wrap {
