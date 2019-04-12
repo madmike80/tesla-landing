@@ -742,7 +742,7 @@
   }
 
   .security-rating__category {
-    min-width: 320px;
+    min-width: 325px;
 }
 
   .text-wrap {
@@ -779,7 +779,7 @@
   }
 }
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 745px) {
   .header__logo {
     margin-left: 5px;
   }
