@@ -383,7 +383,8 @@
 .security-rating__category {
   display: flex;
   justify-content: space-between;
-  max-width: 290px;
+  max-width: 330px;
+  padding: 0 15px;
   text-transform: uppercase;
 }
 
@@ -450,7 +451,7 @@
   }
 
   .security {
-    background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat, url(../img/car_frame_group.png) 100% 52%/76% auto no-repeat;
+    background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat, url(../img/car_frame_group.png) 100% 52%/73% auto no-repeat;
   }
 }
 
@@ -478,7 +479,7 @@
   }
 
   .security {
-    background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat, url(../img/car_frame_group.png) 100% 40%/70% auto no-repeat;
+    background: url(../img/ModelS.svg) 100% 19%/55% auto no-repeat, url(../img/car_frame_group.png) 100% 40%/67% auto no-repeat;
   }
 
   /* .info {
@@ -697,7 +698,7 @@
   .preview__info {
     flex-direction: column;
     margin: 0;
-    height: 130px;
+    height: auto; /*130px*/
   }
 
   .preview__bg {
@@ -717,12 +718,12 @@
 
   .preview__description {
     max-width: 520px;
-    margin-bottom: 58px;
+    margin-bottom: 15px;
   }
 
   .description {
     max-width: 240px;
-    height: 80px;
+    height: auto;/*80px*/
   }
 
   .description:nth-child(1) svg {
@@ -793,6 +794,14 @@
     min-height: 1037px;
   }
 
+  .security-rating {
+    margin: 60px 0 75px 0px;
+  }
+
+  .security-rating__category {
+    min-width: 325px;
+}
+
   .text-wrap {
     flex-basis: 45%;
   }
@@ -812,7 +821,7 @@
 
   .order_aside-right,
   .order_aside-left {
-    margin: 10px 0 54px 115px;
+    margin: 0 0 62px 115px;
     min-width: 498px;
   }
 
@@ -821,8 +830,8 @@
   }
 
   .preview__arrow {
-    background: url(../img/vector.svg) 50% 100% no-repeat;
-    min-height: 112px;
+    background: url(../img/vector.svg) 50% 70% no-repeat;
+    min-height: 132px;
     /* margin-top: 92px; */
   }
 }
@@ -965,7 +974,7 @@
 }
 
 .preview__description {
-  margin-bottom: 26px;
+  margin-bottom: 15px;
   }
 
   .order__info {
@@ -983,7 +992,7 @@
   }
 
   .preview__arrow {
-    margin-top: 38px;
+    margin-top: 10px;
   }
 
   .info__bg {
