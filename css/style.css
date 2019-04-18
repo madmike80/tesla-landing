@@ -562,7 +562,9 @@
 
   .order_aside-right,
   .order_aside-left {
-    margin: 0 0 50px 280px;
+    /* margin: 0 0 50px 280px; */
+    margin: auto;
+    margin-bottom: 50px;
     max-width: 440px;
   }
 
@@ -747,7 +749,11 @@
 
   .text-wrap {
     flex-basis: 45%;
-    min-width: 374px;
+    /* min-width: 374px; */
+  }
+
+  .content__title {
+    width: 87%;
   }
 
   .security-rating {
@@ -953,7 +959,7 @@
   }
 
   .content__text {
-    margin: 0 60px 40px 15px;
+    margin: 0 0 40px 0;
   }
 
   .security {
