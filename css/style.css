@@ -749,7 +749,6 @@
 
   .text-wrap {
     flex-basis: 45%;
-    /* min-width: 374px; */
   }
 
   .content__title {
@@ -782,11 +781,10 @@
   .preview__arrow {
     background: url(../img/vector.svg) 50% 70% no-repeat;
     min-height: 132px;
-    /* margin-top: 92px; */
   }
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 760px) {
   .header__logo {
     margin-left: 5px;
   }
@@ -964,7 +962,7 @@
 
   .security {
     background: url(../img/ModelS.svg) 0% 10%/107% auto no-repeat, url(../img/car_frame_group.png) 0% 16%/96% auto no-repeat;
-    min-height: 563px;
+    min-height: 625px;
   }
 }
 
