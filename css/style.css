@@ -503,7 +503,7 @@
   }
 
   .security {
-    min-height: 1130px;
+    min-height: 890px;
   }
 }
 
@@ -552,7 +552,7 @@
   }
 
   .content__text {
-    margin: 0 60px 65px 15px;
+    margin: 0 40px 65px 15px;
   }
 
   .description-wrap {
