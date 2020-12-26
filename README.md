@@ -1,6 +1,6 @@
-# tesle-lending
+# tesle-landing
 
-Lending page - Tesla
+Landing page - Tesla
 
 
 
