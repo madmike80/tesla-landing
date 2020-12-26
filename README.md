@@ -1,5 +1,6 @@
-# Tesla-Mihail_Treschalin
-Tesla
+# tesle-lending
+
+Lending page - Tesla
 
 
-https://webheroschool.github.io/Tesla-Mihail_Treschalin/
+
